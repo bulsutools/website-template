@@ -23,94 +23,72 @@ export type ToolEntry = {
   note?: string;
 };
 
+/**
+ * Example entries. Replace with your org's real projects, URLs, stats and
+ * screenshots before shipping. Keep `stats` limited to numbers you can point
+ * at a source for.
+ */
 export const tools: ToolEntry[] = [
   {
-    id: "room-tba",
-    name: "Room TBA",
+    id: "campus-map",
+    name: "Campus Map",
     description:
-      "Search a room, a building nickname or a course and see it on the campus map. It also has room schedules, a class planner and jeepney routes, and it keeps working when the signal drops.",
-    href: "https://room-tba.uplb.tools",
-    githubHref: "https://github.com/uplbtools/room-tba",
+      "Search a room, a building nickname or a course and see it on the campus map. It also has room schedules, a class planner and transit routes, and it keeps working when the signal drops.",
+    href: "https://app.campus.tools",
+    githubHref: "https://github.com/campus-tools/campus-map",
     actionLabel: "Open the map",
     status: "active",
     statusLabel: "Active",
     tags: ["Map", "Open source"],
-    screenshot: "/room-tba-screenshot.png",
-    screenshotAlt: "Room TBA campus map with room search and building pins",
+    screenshot: "/campus-map-screenshot.png",
+    screenshotAlt: "Campus map with room search and building pins",
     stats: [
-      { value: "50,000+", label: "monthly page views" },
-      { value: "58", label: "buildings mapped" },
-      { value: "94,000+", label: "class sections" },
+      { value: "—", label: "monthly page views" },
+      { value: "—", label: "buildings mapped" },
+      { value: "—", label: "class sections" },
     ],
-    note: "It's been forked for UP Visayas, UP Baguio and BulSU.",
+    note: "Replace this note with a real milestone.",
   },
   {
-    id: "uppetite",
-    name: "UPPETITE",
+    id: "food-finder",
+    name: "Food Finder",
     description:
-      "Pick where you are, your next class and how long you have, and get only the food stops that fit the walk around Elbi.",
-    href: "https://uppetite.uplb.tools",
+      "Pick where you are, your next class and how long you have, and get only the food stops that fit the walk.",
+    href: "https://food.campus.tools",
     actionLabel: "Open app",
     status: "active",
     statusLabel: "Active",
     tags: ["Food"],
-    screenshot: "/uppetite-screenshot.png",
+    screenshot: "/food-finder-screenshot.png",
     screenshotAlt:
-      "UPPETITE break planner choosing a building, next class, and break time to find food stops",
+      "Food finder choosing a building, next class, and break time to find food stops",
   },
   {
-    id: "kubo",
-    name: "Kubo",
+    id: "grade-sim",
+    name: "Grade Simulator",
     description:
-      "Find a dorm you can trust near campus. Dorm owners get tools to list rooms and manage availability.",
-    href: "https://www.facebook.com/findkubo/",
-    actionLabel: "Visit Kubo",
-    status: "active",
-    statusLabel: "Community partner",
-    tags: ["Housing"],
-    screenshot: "/kubo-screenshot.png",
-    screenshotAlt: "Kubo student housing map showing dorm listings around UPLB",
-  },
-  {
-    id: "gradesim",
-    name: "Elbi GradeSim",
-    description:
-      "This browser extension sits on top of the AMIS grades page and simulates your GWA against Latin honor targets.",
-    href: "https://gradesim.uplbtools.me",
-    githubHref: "https://github.com/uplbtools/gradesim",
+      "This browser extension sits on top of the student portal grades page and simulates your standing against your targets.",
+    href: "https://grades.campus.tools",
+    githubHref: "https://github.com/campus-tools/grade-sim",
     actionLabel: "Install extension",
     status: "active",
     statusLabel: "Active",
     tags: ["Extension", "Open source"],
-    screenshot: "/gradesim-screenshot.png",
-    screenshotAlt: "Elbi GradeSim AMIS extension",
+    screenshot: "/grade-sim-screenshot.png",
+    screenshotAlt: "Grade simulator extension",
   },
   {
-    id: "gwa-calculator",
-    name: "UP GWA Calculator",
+    id: "campus-directory",
+    name: "Campus Directory",
     description:
-      "Track your grades per semester and check your Latin honors standing. It's built for UP students.",
-    href: "https://up-gwa.vercel.app",
-    actionLabel: "Visit website",
-    status: "active",
-    statusLabel: "Active",
-    tags: ["Academics"],
-    screenshot: "/gwa-calculator-screenshot.png",
-    screenshotAlt:
-      "UP GWA Calculator grade tracking dashboard showing subjects, GWA, and Latin honors status",
-  },
-  {
-    id: "uplb-trail",
-    name: "UPLB TRAIL",
-    description:
-      "Search hundreds of UPLB websites, offices, resources and student organizations.",
-    href: "https://uplb-trail.vercel.app",
+      "Search hundreds of campus websites, offices, resources and student organizations.",
+    href: "https://directory.campus.tools",
     actionLabel: "Visit website",
     status: "active",
     statusLabel: "Active",
     tags: ["Directory"],
-    screenshot: "/trail-screenshot.png",
+    screenshot: "/directory-screenshot.png",
     screenshotAlt:
-      "UPLB TRAIL search engine page showing category tags and directory search results",
+      "Campus directory search engine page showing category tags and search results",
   },
 ];

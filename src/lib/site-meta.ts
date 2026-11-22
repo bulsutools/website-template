@@ -1,13 +1,13 @@
-export const SITE_ORIGIN = "https://www.uplb.tools";
-export const SITE_NAME = "uplb.tools";
+export const SITE_ORIGIN = "https://www.campus.tools";
+export const SITE_NAME = "campus.tools";
 
-export const DEFAULT_TITLE = "uplb.tools";
+export const DEFAULT_TITLE = "campus.tools";
 export const DEFAULT_DESCRIPTION =
-  "Room TBA, Elbi GradeSim and other open-source tools for UP Los Baños. UPLB students build them on GitHub, and this isn't an official university site.";
+  "Open-source campus tools built by students. Free utilities, MIT-licensed on GitHub, and this isn't an official university site.";
 
 export const DEFAULT_OG_IMAGE = "/og.png";
 export const DEFAULT_OG_IMAGE_ALT =
-  "uplb.tools, with Room TBA and Elbi GradeSim for UP Los Baños";
+  "campus.tools, open-source tools for your campus";
 export const OG_IMAGE_WIDTH = 1200;
 export const OG_IMAGE_HEIGHT = 630;
 

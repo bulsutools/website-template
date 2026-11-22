@@ -1,8 +1,11 @@
-# uplbtools.me Agent Guide
+# campus.tools Agent Guide
 
 **Human developers:** start with [README.md](README.md).
 
-Org-wide agent defaults: see [room-tba/AGENTS.md](https://github.com/uplbtools/room-tba/blob/main/AGENTS.md). This file tailors that playbook to the **org landing site**.
+This is a template for a student-run open-source tools collective's org landing
+site. Before shipping a fork, replace every placeholder: `campus.tools`,
+`campus-tools`, `app.campus.tools`, "Example University", and the sample
+content in `src/data/` and `src/pages/transparency.astro`.
 
 ## Doc map
 
@@ -11,15 +14,14 @@ Org-wide agent defaults: see [room-tba/AGENTS.md](https://github.com/uplbtools/r
 | Site structure | `src/pages/`, `src/components/` |
 | Global styles | [src/styles/global.css](src/styles/global.css) |
 | Messenger short links | [workers/messenger-redirect/](workers/messenger-redirect/) (Cloudflare Worker) |
-| Design alignment with Room TBA | [uplbtools/uplbtools.me#1](https://github.com/uplbtools/uplbtools.me/issues/1) |
 
 ## Stack
 
-- **Framework:** Astro 6 (static org landing)
+- **Framework:** Astro (static org landing)
 - **Node:** ≥ 22.12
 - **Package manager:** npm (`package-lock.json`)
-- **Deploy:** Vercel (org hub at `uplbtools.me`)
-- **Edge:** Cloudflare Workers in `workers/` for subdomain redirects (e.g. `messenger.uplbtools.me`)
+- **Deploy:** Vercel (org hub at `campus.tools`)
+- **Edge:** Cloudflare Workers in `workers/` for subdomain redirects (e.g. `messenger.campus.tools`)
 
 ## Branches and deploy
 
@@ -27,12 +29,11 @@ Org-wide agent defaults: see [room-tba/AGENTS.md](https://github.com/uplbtools/r
 - Feature work: branch → PR to `main`
 - No `staging` branch today: use Vercel preview on the PR
 
-Community URLs should match Room TBA constants where linked:
+Community URLs referenced across the site:
 
-- Discord → `https://discord.uplbtools.me`
-- Messenger contribute → `https://room-tba.uplbtools.me/messenger/contribute`
-- Messenger maintainers → `https://room-tba.uplbtools.me/messenger/maintain`
-- Room TBA → `https://room-tba.uplbtools.me`
+- Discord → `https://discord.campus.tools`
+- Messenger short links → `https://messenger.campus.tools/{contribute,maintain}`
+- Flagship app → `https://app.campus.tools`
 
 ## Verify before done
 
@@ -45,7 +46,6 @@ Community URLs should match Room TBA constants where linked:
 
 ## UI guardrails
 
-- Align visually with **Room TBA** warm maroon + light surfaces ([#1](https://github.com/uplbtools/uplbtools.me/issues/1)): not the current dark-zinc-only theme long term
 - **No decorative animations**: functional transitions only
 - Buttons and chips must stay inside containers at narrow widths
 
@@ -53,13 +53,14 @@ Community URLs should match Room TBA constants where linked:
 
 ```
 src/
- components/ # Hero, Projects, Community, Footer, …
+ components/ # Hero, Tools, Community, Footer, …
  layouts/ # Layout.astro
- pages/ # index.astro
+ pages/ # index.astro, about, people, press, privacy, terms, transparency
+ data/ # tools.ts and press.ts: sample content, replace with yours
  styles/ # global.css
 workers/
- messenger-redirect/ # Cloudflare Worker for messenger.uplbtools.me
-public/ # favicon, screenshots
+ messenger-redirect/ # Cloudflare Worker for messenger.campus.tools
+public/ # favicon, screenshots, hero photo
 ```
 
 ## Commits

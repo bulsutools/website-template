@@ -6,7 +6,7 @@ import Footer from "../components/Footer.astro";
 
 <Layout
   title="Transparency"
-  description="This monthly report lists every donation in and every expense out for UPLB Tools and Room TBA, with receipts."
+  description="This monthly report lists every donation in and every expense out for the project, with receipts. Template placeholder content."
 >
   <Header />
   <main class="transparency-page">
@@ -14,435 +14,99 @@ import Footer from "../components/Footer.astro";
     <header class="hero">
       <h1>Transparency report</h1>
       <p class="lede">
-        Room TBA runs on donations. This page lists every peso in and every
-        peso out, month by month, with receipts. Sponsorships follow the
-        40/30/30 split on the <a href="https://room-tba.uplb.tools/sponsors">sponsors page</a>. There
-        were no sponsors this period, so everything here is donations.
+        TODO(template): this page is a sample ledger. Replace every figure,
+        receipt and note below with your project's real monthly report, and
+        update it each month.
       </p>
     </header>
 
-    {/* Update each month: copy the newest month's "Balance owed" and its last day here. */}
     <section class="balance" aria-labelledby="current-balance">
       <h2 id="current-balance">Current balance</h2>
       <div class="summary">
         <div class="summary-item summary-net">
-          <span class="summary-label">Owed to the maintainer, as of September 30, 2026</span>
+          <span class="summary-label">Owed to the maintainer, as of Month Year</span>
           <span class="summary-value">₱0.00</span>
         </div>
       </div>
       <p class="receipt-note">
-        The project owes nothing. Every bill through September is paid.
+        The project owes nothing. Every bill through Month Year is paid.
       </p>
     </section>
 
-    <section class="month" aria-labelledby="sep-2026">
-      <h2 id="sep-2026">September 2026</h2>
+    <section class="month" aria-labelledby="sample-month">
+      <h2 id="sample-month">Sample month</h2>
 
       <div class="summary">
         <div class="summary-item">
           <span class="summary-label">Income</span>
-          <span class="summary-value">₱1,323.84</span>
+          <span class="summary-value">₱0.00</span>
         </div>
         <div class="summary-item">
           <span class="summary-label">Expenses</span>
-          <span class="summary-value">₱1,338.72</span>
+          <span class="summary-value">₱0.00</span>
         </div>
         <div class="summary-item summary-net">
           <span class="summary-label">Net</span>
-          <span class="summary-value">−₱14.88</span>
+          <span class="summary-value">₱0.00</span>
         </div>
       </div>
 
       <h3>Money in</h3>
       <ul class="ledger">
-        <li class="ledger-month">September</li>
         <li>
           <div class="ledger-what">
-            2 donations through <a href="https://room-tba.uplb.tools/donate">/donate</a>, Sep 10 and 16,
-            after PayMongo fees
+            Donations through <a href="https://app.campus.tools/donate">/donate</a>, with dates and fees noted
           </div>
-          <div class="ledger-amount">₱1,323.84</div>
+          <div class="ledger-amount">₱0.00</div>
         </li>
         <li class="ledger-total">
           <div class="ledger-what">Total in</div>
-          <div class="ledger-amount">₱1,323.84</div>
+          <div class="ledger-amount">₱0.00</div>
         </li>
       </ul>
 
       <h3>Money out</h3>
       <ul class="ledger">
-        <li class="ledger-month">September</li>
         <li>
           <div class="ledger-what">
-            Vercel hosting, receipt 2951-2682, paid Sep 24 <span class="recur">monthly</span>
+            Hosting and tooling costs, each with a receipt link
+            <span class="recur">recurring</span>
           </div>
-          <div class="ledger-amount">₱1,338.72 ($21.18)</div>
+          <div class="ledger-amount">₱0.00</div>
         </li>
         <li class="ledger-total">
           <div class="ledger-what">Total out</div>
-          <div class="ledger-amount">₱1,338.72</div>
+          <div class="ledger-amount">₱0.00</div>
         </li>
       </ul>
 
       <h3>Liabilities</h3>
       <p class="ledger-intro">
-        The Vercel bill was paid from the maintainer's personal card. The
-        maintainer waived the whole balance owed, so the project owes nothing
-        going into October.
+        If any expense was paid personally, list what the project owes back here.
       </p>
       <ul class="ledger">
-        <li>
-          <div class="ledger-what">
-            Owed to the maintainer after July to August
-          </div>
-          <div class="ledger-amount">₱3,694.68</div>
-        </li>
-        <li>
-          <div class="ledger-what">
-            Owed to the maintainer, expenses of ₱1,338.72 less ₱1,323.84 in
-            donations received
-          </div>
-          <div class="ledger-amount">₱14.88</div>
-        </li>
-        <li>
-          <div class="ledger-what">
-            Waived by the maintainer as a personal donation
-          </div>
-          <div class="ledger-amount">−₱3,709.56</div>
-        </li>
         <li class="ledger-total">
           <div class="ledger-what">Balance owed</div>
-          {/* Newest month: keep in sync with Current balance at the top. */}
           <div class="ledger-amount">₱0.00</div>
         </li>
       </ul>
 
       <h3>Notes</h3>
       <p>
-        The Vercel peso figure uses 63.2069 pesos per dollar, the card rate on
-        the Aug 10 OpenCode receipt, the same rate as the previous report. The
-        Vercel receipt shows the dollar amount only.
+        TODO(template): explain currency conversion, payment timing, and any
+        unusual items an editor or donor might ask about.
       </p>
 
       <h3>Updates</h3>
       <p>
-        UPLB Tools was accepted into Vercel's Open Source Program.
-      </p>
-      <p>
-        MapTiler gave UPLB Tools a resource grant.
-      </p>
-    </section>
-
-    <section class="month" aria-labelledby="jul-aug-2026">
-      <h2 id="jul-aug-2026">July to August 2026</h2>
-
-      <div class="summary">
-        <div class="summary-item">
-          <span class="summary-label">Income</span>
-          <span class="summary-value">₱1,790.35</span>
-        </div>
-        <div class="summary-item">
-          <span class="summary-label">Expenses</span>
-          <span class="summary-value">₱5,985.03</span>
-        </div>
-        <div class="summary-item summary-net">
-          <span class="summary-label">Net</span>
-          <span class="summary-value">−₱4,194.68</span>
-        </div>
-      </div>
-
-      <h3>Money in</h3>
-      <ul class="ledger">
-        <li class="ledger-month">August</li>
-        <li>
-          <div class="ledger-what">
-            13 donations through <a href="https://room-tba.uplb.tools/donate">/donate</a>, Aug 3 to 9,
-            after PayMongo fees
-          </div>
-          <div class="ledger-amount">₱1,290.35</div>
-        </li>
-        <li>
-          <div class="ledger-what">
-            Donation from the UPLB Student Help Desk, sent by GCash
-          </div>
-          <div class="ledger-amount">₱500.00</div>
-        </li>
-        <li class="ledger-total">
-          <div class="ledger-what">Total in</div>
-          <div class="ledger-amount">₱1,790.35</div>
-        </li>
-      </ul>
-
-      <h3>Money out</h3>
-      <p class="ledger-intro">
-        Costs are grouped by month paid, with recurring costs first.
-      </p>
-      <ul class="ledger">
-        <li class="ledger-month">July</li>
-        <li>
-          <div class="ledger-what">
-            uplb.tools domain, paid Jul 13 <span class="recur">yearly</span>
-            (<a href="/transparency/2026-07-porkbun-domain.png">receipt</a>)
-          </div>
-          <div class="ledger-amount">₱618.16 ($9.78)</div>
-        </li>
-        <li class="ledger-month">August</li>
-        <li>
-          <div class="ledger-what">
-            Vercel Pro hosting, July cycle, paid Aug 2 <span class="recur">monthly</span>
-            (<a href="/transparency/2026-08-vercel-pro.png">receipt</a>)
-          </div>
-          <div class="ledger-amount">₱1,264.14 ($20.00)</div>
-        </li>
-        <li>
-          <div class="ledger-what">
-            Vercel platform and usage, invoice 67F77D49-0006, issued Aug 22
-            <span class="recur">monthly, usage varies</span>
-            <ul class="sublines">
-              <li>Pro seat ₱1,264.14 ($20.00)</li>
-              <li>Build minutes ₱836.86 ($13.24)</li>
-              <li>Observability ₱324.25 ($5.13)</li>
-              <li>Serverless compute ₱185.83 ($2.94)</li>
-              <li>Bandwidth ₱67.63 ($1.07)</li>
-              <li>Web analytics ₱53.09 ($0.84)</li>
-              <li>Functions and image tools ₱48.04 ($0.76)</li>
-            </ul>
-          </div>
-          <div class="ledger-amount">₱2,779.84 ($43.98)</div>
-        </li>
-        <li>
-          <div class="ledger-what">
-            OpenCode Go subscription for maintenance tooling, paid Aug 10
-            <span class="recur">monthly</span>
-            (<a href="/transparency/2026-08-opencode-go.png">receipt</a>)
-          </div>
-          <div class="ledger-amount">₱316.03 ($5.00)</div>
-        </li>
-        <li>
-          <div class="ledger-what">
-            Meta ads promoting Room TBA, six charges Aug 3 to 31, ₱898.98
-            ad spend plus 12% VAT <span class="recur">one-time</span>
-            (<a href="/transparency/2026-08-meta-ads.png">receipt</a>)
-          </div>
-          <div class="ledger-amount">₱1,006.86</div>
-        </li>
-        <li class="ledger-total">
-          <div class="ledger-what">Total out</div>
-          <div class="ledger-amount">₱5,985.03</div>
-        </li>
-      </ul>
-
-      <h3>Liabilities</h3>
-      <p class="ledger-intro">
-        Every expense above was paid from the maintainer's personal card. What
-        donations didn't cover, the project owes back.
-      </p>
-      <ul class="ledger">
-        <li>
-          <div class="ledger-what">
-            Owed to the maintainer, expenses of ₱5,985.03 less ₱1,790.35 in
-            donations received
-          </div>
-          <div class="ledger-amount">₱4,194.68</div>
-        </li>
-        <li>
-          <div class="ledger-what">
-            Waived by the maintainer as a personal donation
-          </div>
-          <div class="ledger-amount">−₱500.00</div>
-        </li>
-        <li class="ledger-total">
-          <div class="ledger-what">Balance owed</div>
-          <div class="ledger-amount">₱3,694.68</div>
-        </li>
-      </ul>
-
-      <h3>Receipts</h3>
-      <div class="receipts">
-        <figure>
-          <a href="/transparency/2026-08-vercel-pro.png">
-            <img
-              src="/transparency/2026-08-vercel-pro.png"
-              alt="Vercel invoice 67F77D49-0004, July 2026 Pro plan, $20.00, paid August 2, 2026"
-              loading="lazy"
-              width="751"
-              height="545"
-            />
-          </a>
-          <figcaption>Vercel Pro, invoice 67F77D49-0004</figcaption>
-        </figure>
-        <figure>
-          <a href="/transparency/2026-07-porkbun-domain.png">
-            <img
-              src="/transparency/2026-07-porkbun-domain.png"
-              alt="Porkbun invoice 10981073, uplb.tools domain registration, $9.78, buyer details redacted"
-              loading="lazy"
-              width="850"
-              height="390"
-            />
-          </a>
-          <figcaption>uplb.tools domain, Porkbun invoice 10981073</figcaption>
-        </figure>
-        <figure>
-          <a href="/transparency/2026-08-meta-ads.png">
-            <img
-              src="/transparency/2026-08-meta-ads.png"
-              alt="Meta billing report for July to September 2026, six ad payments totaling PHP 1,006.86, all paid, account and card details redacted"
-              loading="lazy"
-              width="756"
-              height="612"
-            />
-          </a>
-          <figcaption>Meta ads, billing report Jul 1 to Sep 1</figcaption>
-        </figure>
-        <figure>
-          <a href="/transparency/2026-08-opencode-go.png">
-            <img
-              src="/transparency/2026-08-opencode-go.png"
-              alt="Stripe receipt 2138-9554 from Anomaly, OpenCode Go, $5.00, charged ₱316.03 at 63.2069 PHP per USD"
-              loading="lazy"
-              width="405"
-              height="680"
-            />
-          </a>
-          <figcaption>OpenCode Go, Stripe receipt 2138-9554</figcaption>
-        </figure>
-      </div>
-      <p class="receipt-note">Buyer names and addresses are redacted.</p>
-
-      <h3>Notes</h3>
-      <p>
-        Donations covered ₱1,790.35 of the period's ₱5,985.03 in costs. The
-        maintainer paid the rest personally and waived ₱500.00 of it as a
-        donation, leaving the balance under Liabilities. Future donations
-        repay that balance before anything else, then follow the 40/30/30
-        split. All 13 site donations came in during
-        enlistment week (Aug 3 to 9) and none after. Donations follow campus
-        foot traffic.
-      </p>
-      <p>
-        The OpenCode receipt shows the real card charge of ₱316.03 at 63.2069
-        pesos per dollar. The Vercel and Porkbun peso figures use that same
-        rate, since all three were paid on the same card in the same period.
-        This first report runs from July 18, when donations opened, through
-        the end of August. From September on, each report covers the invoices
-        and charges dated that month.
-      </p>
-      <p>
-        The ads ran during enlistment week. Pageviews went from 15,430 the
-        week before to 30,346 (Vercel Analytics), and all 13 donations came
-        in that week, ₱1,290.35 against ₱1,006.86 in ad cost. Enlistment
-        raises traffic by itself, so not all of that was the ads. The three
-        campaigns drew 755 link clicks (₱0.69 per click on the main one, with
-        an 8.2% click-through rate) and 469 post engagements. Reach is
-        also how other campuses find the project. Room TBA is built to be
-        forked, and forks for
-        <a href="https://github.com/andrianllmm/upv-room-tba">UP Visayas</a>,
-        <a href="https://github.com/UPB-Tools/room-tba">UP Baguio</a>, and
-        Bulacan State University are already active. The BulSU fork is live
-        at <a href="https://bulsu-room-tba.vercel.app">bulsu-room-tba.vercel.app</a>.
-      </p>
-      <p>
-        The ₱2,779.84 Vercel invoice is a peak, not the usual bill. Its usage
-        charges came from the same enlistment surge. In a quiet month usage
-        fits inside the plan's included credit and the bill is the
-        ₱1,264.14 seat alone, which is where the current cycle is tracking so far.
-      </p>
-      <figure class="chart">
-        <figcaption>Daily page views, Jul 27 to Aug 10. Ads started Aug 3.</figcaption>
-        <svg viewBox="0 0 640 150" role="img" aria-label="Line chart of daily page views. The baseline is around 1,500 a day, the peak is 10,068 on Aug 4 after ads started Aug 3, and views are back near 1,000 by Aug 6.">
-          <line x1="46" y1="128" x2="634" y2="128" stroke="#e8e2e1" />
-          <line x1="46" y1="70.9" x2="634" y2="70.9" stroke="#e8e2e1" />
-          <line x1="46" y1="13.7" x2="634" y2="13.7" stroke="#e8e2e1" />
-          <text x="42" y="131" class="tick" text-anchor="end">0</text>
-          <text x="42" y="74" class="tick" text-anchor="end">5k</text>
-          <text x="42" y="17" class="tick" text-anchor="end">10k</text>
-          <line x1="340" y1="10" x2="340" y2="128" stroke="#8a8a8a" stroke-dasharray="3 3" />
-          <text x="336" y="20" class="tick" text-anchor="end">ads start</text>
-          <path d="M46,128.0 L46.0,91.1 L88.0,105.2 L130.0,108.0 L172.0,112.1 L214.0,114.2 L256.0,111.2 L298.0,95.5 L340.0,36.8 L382.0,12.9 L424.0,57.3 L466.0,118.1 L508.0,116.9 L550.0,116.6 L592.0,123.1 L634.0,120.4 L634.0,128.0 Z" fill="#A63D33" opacity="0.12" />
-          <polyline points="46.0,91.1 88.0,105.2 130.0,108.0 172.0,112.1 214.0,114.2 256.0,111.2 298.0,95.5 340.0,36.8 382.0,12.9 424.0,57.3 466.0,118.1 508.0,116.9 550.0,116.6 592.0,123.1 634.0,120.4" fill="none" stroke="#A63D33" stroke-width="2" />
-          <circle cx="382" cy="12.9" r="3.5" fill="#A63D33" />
-          <text x="374" y="11" class="dlabel" text-anchor="end">10,068</text>
-          <text x="46" y="145" class="tick">Jul 27</text>
-          <text x="256" y="145" class="tick" text-anchor="middle">Aug 1</text>
-          <text x="340" y="145" class="tick" text-anchor="middle">3</text>
-          <text x="424" y="145" class="tick" text-anchor="middle">5</text>
-          <text x="508" y="145" class="tick" text-anchor="middle">7</text>
-          <text x="634" y="145" class="tick" text-anchor="end">10</text>
-        </svg>
-      </figure>
-
-      <figure class="chart">
-        <figcaption>Donations per day, net of fees. All 13 landed Aug 3 to 9.</figcaption>
-        <svg viewBox="0 0 640 150" role="img" aria-label="Bar chart of daily donations. Donations peak at 591 pesos on Aug 3, taper to about 49 pesos by Aug 9 and stop outside Aug 3 to 9.">
-          <line x1="46" y1="128" x2="634" y2="128" stroke="#e8e2e1" />
-          <line x1="46" y1="72.6" x2="634" y2="72.6" stroke="#e8e2e1" />
-          <line x1="46" y1="17.2" x2="634" y2="17.2" stroke="#e8e2e1" />
-          <text x="42" y="131" class="tick" text-anchor="end">0</text>
-          <text x="42" y="76" class="tick" text-anchor="end">300</text>
-          <text x="42" y="21" class="tick" text-anchor="end">600</text>
-          <rect x="331" y="18.9" width="18" height="109.1" rx="3" fill="#2F6BB0"><title>Aug 3, ₱591.00</title></rect>
-          <rect x="373" y="82.5" width="18" height="45.5" rx="3" fill="#2F6BB0"><title>Aug 4, ₱246.25</title></rect>
-          <rect x="415" y="118.9" width="18" height="9.1" rx="3" fill="#2F6BB0"><title>Aug 5, ₱49.25</title></rect>
-          <rect x="457" y="124.4" width="18" height="3.6" rx="2" fill="#2F6BB0"><title>Aug 6, ₱19.70</title></rect>
-          <rect x="499" y="111.6" width="18" height="16.4" rx="3" fill="#2F6BB0"><title>Aug 7, ₱88.65</title></rect>
-          <rect x="541" y="82.5" width="18" height="45.5" rx="3" fill="#2F6BB0"><title>Aug 8, ₱246.25</title></rect>
-          <rect x="583" y="118.9" width="18" height="9.1" rx="3" fill="#2F6BB0"><title>Aug 9, ₱49.25</title></rect>
-          <text x="340" y="14" class="dlabel" text-anchor="middle">₱591</text>
-          <text x="46" y="145" class="tick">Jul 27</text>
-          <text x="256" y="145" class="tick" text-anchor="middle">Aug 1</text>
-          <text x="340" y="145" class="tick" text-anchor="middle">3</text>
-          <text x="424" y="145" class="tick" text-anchor="middle">5</text>
-          <text x="508" y="145" class="tick" text-anchor="middle">7</text>
-          <text x="634" y="145" class="tick" text-anchor="end">10</text>
-        </svg>
-      </figure>
-
-      <figure class="chart chart-narrow">
-        <figcaption>The peak Vercel invoice against a quiet month.</figcaption>
-        <svg viewBox="0 0 640 170" role="img" aria-label="Stacked bar chart. The July cycle invoice is 2,779.84 pesos, a 1,264.14 peso seat plus 1,515.70 pesos of surge usage. A quiet month is the seat alone.">
-          <line x1="46" y1="146" x2="634" y2="146" stroke="#e8e2e1" />
-          <line x1="46" y1="98.4" x2="634" y2="98.4" stroke="#e8e2e1" />
-          <line x1="46" y1="50.8" x2="634" y2="50.8" stroke="#e8e2e1" />
-          <text x="42" y="149" class="tick" text-anchor="end">0</text>
-          <text x="42" y="102" class="tick" text-anchor="end">1k</text>
-          <text x="42" y="54" class="tick" text-anchor="end">2k</text>
-          <rect x="150" y="85.8" width="90" height="60.2" rx="3" fill="#A63D33"><title>Pro seat, ₱1,264.14</title></rect>
-          <rect x="150" y="13.7" width="90" height="70.1" rx="3" fill="#2F6BB0"><title>Usage from the surge, ₱1,515.70</title></rect>
-          <text x="250" y="55" class="dlabel">usage ₱1,515.70</text>
-          <text x="250" y="120" class="dlabel">seat ₱1,264.14</text>
-          <text x="150" y="164" class="tick">July cycle invoice, ₱2,779.84</text>
-          <rect x="420" y="85.8" width="90" height="60.2" rx="3" fill="#A63D33"><title>Pro seat, ₱1,264.14</title></rect>
-          <text x="520" y="120" class="dlabel">seat ₱1,264.14</text>
-          <text x="420" y="164" class="tick">Quiet month, ₱1,264.14</text>
-        </svg>
-      </figure>
-
-      <p>
-        There were no contributor payouts this month. Income was below the operating
-        floor, so everything went to operations.
-      </p>
-
-      <h3>Updates</h3>
-      <p>
-        AMIS is in a data cleaning phase and Room TBA is helping with it. Ken
-        and Eunice, the DX-AMIS student assistants, are working on the
-        cleanup.
-      </p>
-      <p>
-        Room TBA was showcased by the UP Data Science Society, the UPLB Data
-        Science Guild, Josh Dev PH, and Open Source Software PH.
-      </p>
-      <p>
-        We're applying to open source grant programs (MapTiler, Vercel for
-        OSS, Codex for OSS, and others) to cover the stack without leaning on
-        donations alone.
+        TODO(template): list grants, program acceptances, or milestones this
+        month.
       </p>
     </section>
 
     <section class="donate-line">
       <p>
-        If Room TBA is useful to you, <a href="https://room-tba.uplb.tools/donate">a donation</a> covers
+        If the project is useful to you, <a href="https://app.campus.tools/donate">a donation</a> covers
         next month's bill.
       </p>
     </section>

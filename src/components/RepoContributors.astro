@@ -6,11 +6,11 @@ import {
 import { coreTeam, designCredits } from "../data/press";
 
 interface Props {
-  /** Repository under the uplbtools org. */
+  /** Repository under the campus-tools org. */
   repo?: string;
 }
 
-const { repo = "room-tba" } = Astro.props;
+const { repo = "campus.tools" } = Astro.props;
 
 /**
  * Pulled from GitHub at build time so the list is never hand-maintained.

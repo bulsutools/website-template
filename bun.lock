@@ -3,7 +3,7 @@
   "configVersion": 0,
   "workspaces": {
     "": {
-      "name": "uplbtools.me",
+      "name": "campus-tools-site",
       "dependencies": {
         "astro": "^7.4.0",
       },

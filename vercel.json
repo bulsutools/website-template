@@ -11,14 +11,14 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "uplbtools.me" }],
-      "destination": "https://www.uplb.tools/:path*",
+      "has": [{ "type": "host", "value": "campus.tools" }],
+      "destination": "https://www.campus.tools/:path*",
       "permanent": true
     },
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.uplbtools.me" }],
-      "destination": "https://www.uplb.tools/:path*",
+      "has": [{ "type": "host", "value": "www.campus.tools" }],
+      "destination": "https://www.campus.tools/:path*",
       "permanent": true
     }
   ]
