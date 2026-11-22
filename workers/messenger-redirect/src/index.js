@@ -1,7 +1,7 @@
-/** Keep in sync with room-tba `src/constants/community-links.ts` MESSENGER_*_TARGET. */
+/** TODO(template): replace with your real Messenger group links. */
 const REDIRECTS = {
-  "/contribute": "https://m.me/j/Aba1V0prvQyLrafZ/",
-  "/maintain": "https://m.me/j/AbZtqMU8UUTiwQfn/",
+  "/contribute": "https://m.me/j/YOUR_CONTRIBUTE_GROUP/",
+  "/maintain": "https://m.me/j/YOUR_MAINTAIN_GROUP/",
 };
 
 const DEFAULT = REDIRECTS["/contribute"];

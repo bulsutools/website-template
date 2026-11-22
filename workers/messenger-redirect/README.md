@@ -1,14 +1,13 @@
-# messenger.uplbtools.me redirects
+# messenger.campus.tools redirects
 
 Cloudflare Worker for role-specific Messenger group chat short links.
 
 | Path | Target |
 | ---- | ------ |
-| `/contribute` | Contributors GC |
-| `/maintain` | Maintainers GC |
-| `/` (default) | Contributors GC |
+| `/contribute` | Contributors group chat |
+| `/maintain` | Maintainers group chat |
+| `/` (default) | Contributors group chat |
 
-Canonical URLs are referenced from [room-tba `community-links.ts`](https://github.com/uplbtools/room-tba/blob/staging/src/constants/community-links.ts).
 
 ## Deploy
 
@@ -17,4 +16,4 @@ cd workers/messenger-redirect
 wrangler deploy
 ```
 
-Uses a **Custom Domain** (`custom_domain = true`) so Cloudflare creates the `messenger` DNS record automatically. Requires Cloudflare account access to the `uplbtools.me` zone.
+Uses a **Custom Domain** (`custom_domain = true`) so Cloudflare creates the `messenger` DNS record automatically. Requires Cloudflare account access to the `campus.tools` zone.

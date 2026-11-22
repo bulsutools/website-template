@@ -6,7 +6,7 @@ export type OrgContributor = {
   contributions: number;
 };
 
-const GITHUB_ORG = "uplbtools";
+const GITHUB_ORG = "campus-tools";
 const EXCLUDED_REPOS = new Set(["demo-repository"]);
 const HIDDEN_LOGINS = new Set([
   "dependabot[bot]",
@@ -69,7 +69,7 @@ export function formatGithubContributions(count: number): string {
 function githubHeaders(): HeadersInit {
   const headers: Record<string, string> = {
     Accept: "application/vnd.github+json",
-    "User-Agent": "uplbtools.me",
+    "User-Agent": "campus.tools",
   };
   const token =
     typeof process !== "undefined" ? process.env.GITHUB_TOKEN : undefined;

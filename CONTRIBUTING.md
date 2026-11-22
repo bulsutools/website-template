@@ -1,10 +1,10 @@
-# Contributing to uplbtools.me
+# Contributing to campus.tools
 
-Thanks for helping maintain the hub for UPLB student open-source tools.
+Thanks for helping maintain the hub for a student-run open-source tools collective.
 
 ## Report issues
 
-Open a [GitHub issue](https://github.com/uplbtools/uplbtools.me/issues) for broken links, missing projects, or copy corrections. No PR required for simple listing updates if you prefer: a maintainer can apply them.
+Open a [GitHub issue](https://github.com/campus-tools/campus.tools/issues) for broken links, missing projects, or copy corrections. No PR required for simple listing updates if you prefer: a maintainer can apply them.
 
 ## Developers
 
@@ -26,4 +26,4 @@ bun dev       # http://localhost:4321
 
 See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 
-Community: [Discord](https://discord.uplbtools.me) · [UPLB Tools](https://uplbtools.me)
+Community: [Discord](https://discord.campus.tools) · [campus.tools](https://campus.tools)

@@ -1,11 +1,10 @@
 /*
  * Kill switch, not a real service worker.
  *
- * From 2026-08-08 to 2026-09-08 this origin served the Room TBA app instead of
- * the landing page. Every visitor in that window still has the app's service
- * worker installed here, and it answers navigations from a precached app shell
- * whose JS assets no longer exist. They get "Room TBA did not finish loading"
- * on www.uplb.tools, and reloading does not help because the stale worker
+ * TODO(template): this file is a kill-switch service worker kept as an example.
+ * If this origin ever served a different app whose service worker went stale,
+ * visitors can get stuck on a precached shell whose assets no longer exist,
+ * and reloading does not help because the stale worker
  * intercepts the reload too.
  *
  * A page script cannot reach those people: the worker replaces the page before

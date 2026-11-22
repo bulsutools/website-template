@@ -1,5 +1,5 @@
 :root {
-  /* Room TBA house palette (see room-tba src/pages/donate.astro) */
+  /* House palette shared across the org's sites */
   --brand-maroon: hsl(5, 53%, 32%);
   --brand-maroon-deep: hsl(5, 53%, 26%);
   --brand-maroon-tint: hsl(5 53% 32% / 0.08);
